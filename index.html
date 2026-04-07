@@ -3,29 +3,39 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Web Design with Copilot</title>
+        <title>Ronald's Portfolio</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
             <a id="home"></a>
-            <h1>Web Design Project</h1>
-            <div class="hamburger" id="hamburger-icon">&#9776;</div>
+            <h1>Ronald's Portfolio</h1>
+            <div class="hamburger" id="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
             <nav role="navigation" id="nav-menu" role="navigation">
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#apps">Apps</a></li>
+                    <li><a href="#youtube">YouTube</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
+
+        <section class="hero">
+            <h2>Christian • IT Admin • Investor • Developer</h2>
+            <p>Building apps, websites, and tutorials that help people grow.</p>
+            <a href="#projects" class="cta-btn">View My Work</a>
+        </section>
+
         <main>
-            <section>
-                <a id="about"></a>
-                <h2>About Me</h2>
-                <p>I am a Christian, IT Admin, and an Investor. I also am an upcoming Full Stack Developer.</p>
-            </section>
-            <section>
+            <section id="projects">
                 <h2>Projects</h2>
                     <article>
                         <h3>Web Design Project</h3>
@@ -42,18 +52,49 @@
                         <p>I plan to create games for the different mobile platforms. Using my background in C# will help.</p>
                         <img src="gaming.jpg" alt="Game Controllers Thumbnail">
                     </article>
-                    <article>
-                        <h3>YouTube How-to Videos</h3>
+                    <article href="#youtube">
+                        <h3>YouTube Content Creation</h3>
                         <p>I plan to create YouTube videos to help others learn new skills.</p>
                         <img src="laptop.jpg" alt="YouTube How-to Videos Thumbnail">
                     </article>
             </section>
-            <section>
+            <section id="apps">
+                <h2>My Published Apps</h2>
+                <article>
+                    <h3>Personal Prayer Journal</h3>
+                    <p>A cross-platform prayer management app</p>
+                    <div class="store-badges">
+                        <a href="https://play.google.com/store/apps/details?id=com.companyname.prayerlistassistant" target="_blank">
+                            <img src="google-play-badge.png" alt="Get it on Google Play" width="180">
+                        </a>
+                        <a href="https://apps.apple.com/us/app/personal-prayer-journal/id6760602618" target="_blank">
+                            <img src="app-store-badge.png" alt="Download on the App Store" width="160">
+                        </a>
+                    </div>
+                    <img src="prayer_logo2.png" alt="App Thumbnail" class="project-img">
+                </article>
+            </section>
+            <section id="youtube">
+                <h2>YouTube: How-to Tech Videos</h2>
+                <p>I create how‑to videos to show how to fix common tech issues. 
+                    <a href="https://www.youtube.com/@simpletechfix" target="_blank" class="cta-btn"> Visit My Channel</a>
+                </p>
+                <div class="youtube-container">
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/watch?v=MvKFkfzipZA"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+            <section id="skills">
                 <h2>Developer Skills</h2>
                 <ul>
                     <li>HTML, CSS, and JavaScript</li>
                     <li>Responsive Web Design</li>
                     <li>C# Programming</li>
+                    <li>.NET MAUI</li>
                     <li>Version Control (Git & GitHub)</li>
                     <li>Testing and Debugging</li>
                     <li>Problem Solving</li>
@@ -63,7 +104,7 @@
             <section>
                 <a id="contact"></a>
                 <h2>Contact Me</h2>
-                <p>If you would like to get in touch, please email me at <a href="mrmrsmsanonymous@yahoo.com">mrmrsmsanonymous@yahoo.com</a>.</p>
+                <p>If you would like to get in touch, please email me at <a href="mailto:mrrecreated77@gmail.com">mrrecreated77@gmail.com</a>.</p>
                 <form action="#" method="post">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
@@ -74,11 +115,11 @@
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
                     <br>
-                    <button type="submit">Send Message</button>
+                    <a href="mailto:mrrecreated77@gmail.com?subject=Contact%20From%20Portfolio&body=Hello%20Ronald," class="send-btn">Send Message</a>
                 </form>
         </main>
         <footer>
-            <p>&copy; 2024 Ron's Web Design Project. All rights reserved.</p>
+            <p>&copy; 2026 Ronald's Web Portfolio. All rights reserved.</p>
         </footer>
         <script src="script.js"></script>
     </body>

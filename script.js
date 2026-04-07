@@ -13,7 +13,7 @@
 // Filter functionality for projects
 document.addEventListener('DOMContentLoaded', function() {
                 // Create filter buttons
-                const projectsSection = document.querySelector('section:nth-of-type(2)');
+                const projectsSection = document.getElementById('projects');
                 const filterContainer = document.createElement('div');
                 filterContainer.className = 'filter-container';
                 filterContainer.style.marginTop = '1.5em';
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
 
                 // Insert filter container before the projects
-                projectsSection.insertBefore(filterContainer, projectsSection.children[1]);
+                projectsSection.insertBefore(filterContainer, projectsSection.querySelector('article'));
 
                 // Function to filter projects
                 function filterProjects(filterValue) {
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.body.appendChild(lightboxOverlay);
 
             // Show lightbox on image click
-            document.querySelectorAll("section:nth-of-type(2) article img").forEach(img => {
+            document.querySelectorAll("#projects article img").forEach(img => {
                 img.style.cursor = "pointer";
                 img.addEventListener("click", function () {
                     lightboxImg.src = this.src;
